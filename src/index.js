@@ -24,7 +24,7 @@ class App extends Component {
             wordCount: value.length
                 ? value
                       .trim()
-                .replace(/\s+/gi, ' ')
+                      .replace(/\s+/gi, ' ')
                       .split(' ').length
                 : 0,
             totalChars: value.length,
@@ -46,7 +46,9 @@ class App extends Component {
                     count: {this.state.totalChars} | word: {this.state.wordCount}
                 </p>
 
-                <p>Reversed:<br /> {this.state.reverse}</p>
+                <p>
+                    Reversed:<br /> {this.state.reverse}
+                </p>
             </div>
         );
     }
